@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalimar Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: cornsilk;
+    color: black;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#menu, #reservation, #location, #testimonials {
+    margin: 3rem 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.menu-details h4 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.testimonial {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> VITS Shalimar  </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to Our Restaurant</h2>
+                <p>Experience the finest dining in town.</p><br>
+                <h3> Shalimar Group of Hotels</h3><br>
+                    <p>High quality accommodation services.
+                    
+                    Discover the Shalimar Group of Hotels, a dynamic conglomerate that has left an indelible mark on various industries since its inception in 1984. With a rich legacy spanning over four decades in Real estate, Construction, Hospitality, Mining, Healthcare, and Education, we have emerged as a trailblazing brand synonymous with excellence and versatility. Our headquarters are strategically located in Nagpur, known as the “Tiger Capital of India,” where we draw inspiration from the city’s resilience and determination.
+                    
+                    At Shalimar Group of Hotels, our unwavering mission is to exceed guest expectations, inspire our dedicated workforce, and achieve remarkable financial results. We strive to deliver impeccable guest services, adhering to recognized quality standards, while consistently promoting excellence, embracing innovation, and fostering future development. Anchored by our core values, we place PEOPLE at the heart of our operations, valuing their potential and investing in their growth.
+                    
+                    Our journey began with a modest single hotel operation, but through relentless dedication, we have evolved into a reputable brand that epitomizes business travel. Today, we take pride in owning and managing 14 hotels and resorts, with 9 exciting projects underway. Complementing our commitment to excellence, we have established a hotel management institute, ensuring a pool of exceptional talents to cater to expanding needs of industry.
+                    
+                    Looking ahead, Orient Group of Hotels envisions expanding our presence overseas, propelling our global footprint and cementing our status as an industry leader.</p>
+            </div>
+        </section>
+        <section id="menu" class="container">
+            <h3>Our Menu</h3>
+            <div class="menu-item">
+                <img src="https://carveyourcraving.com/wp-content/uploads/2019/04/how-to-make-paneer-lababdar.jpg" alt="Dish 1">
+                <div class="menu-details">
+                    <h4>Paneer Lababdar</h4>
+                    <p>249 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.greedygourmet.com/wp-content/uploads/2013/02/dal-makhani-feature-225x225.jpg" alt="Dish 2">
+                <div class="menu-details">
+                    <h4>Dal Makhni</h4>
+                    <p>179 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.chefajaychopra.com/assets/img/recipe/1-1680272770Kajumasalacurrywebp.webp" alt="Dish 1">
+                <div class="menu-details">
+                    <h4>Kaju Curry</h4>
+                    <p>299 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://maayeka.com/wp-content/uploads/2015/09/jeera-aloo-3-1.jpg" alt="Dish 1">
+                <div class="menu-details">
+                    <h4>Aaloo Jeera</h4>
+                    <p>149 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.yummyfoodrecipes.com/resources/picture/org/Tandoori-Roti.jpg" alt="Dish 1">
+                <div class="menu-details">
+                    <h4>Butter Tandoori Roti</h4>
+                    <p>30 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://cdn.shopify.com/s/files/1/1785/5627/t/60/assets/origin_and_history_of_tandoori_roti_vs_naan-1694240461755_1000x.jpg?v=1694240463" alt="Dish 1">
+                <div class="menu-details">
+                    <h4>Butter Naan</h4>
+                    <p>50 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg" alt="Dish 1">
+                <div class="menu-details">
+                    <h4>Tandoori Roti</h4>
+                    <p>20 Rs</p>
+                </div>
+            </div>
+            </div>
+            <!-- Add more dishes as needed -->
+        </section>
+        <section id="reservation" class="container">
+            <h3>Make a Reservation</h3>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="time">Time:</label><br>
+                <input type="time" id="time" name="time" required><br>
+                <label for="people">Number of People:</label><br>
+                <input type="number" id="people" name="people" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="location" class="container">
+            <h3>Our Location</h3>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.393846993088!2d79.08957577530396!3d21.136719080539798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0bc623fcf55%3A0x3d8f3f55d58d83e7!2sZip%20By%20Spree%20Hotels%20Orient!5e0!3m2!1sen!2sin!4v1739615098793!5m2!1sen!2sin" 
+            width="600"
+            height="450"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </section>
+        <section id="testimonials" class="container">
+            <h3>Customer Testimonials</h3>
+            <div class="testimonial">
+                <p>"Amazing food and great service!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic dining experience."</p>
+                <p>- Jane Smith</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Orient Taibah. All rights reserved.</p>
+            <p>Phone: +91 77998 85544</p>
+            <p>Email: info@orienttaibah.com</p>
+            <p>Address: 123 Restaurant Street, Vaghodia, Gujarat, India</p>
+        </div>
+    </footer>
+</body>
+</html>
